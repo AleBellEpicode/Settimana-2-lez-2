@@ -124,10 +124,9 @@ const me = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
-  city: "Toronto",
 };
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+console.log(me);
 
 /* ESERCIZIO 12
     Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
@@ -144,11 +143,9 @@ console.log(me);
 /* ESERCIZIO 14
     Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
   */
+const arrayofnumbers = [];
+arrayofnumbers.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+//Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 
-const arrayofnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-/* ESERCIZIO 15
-    Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
-  */
 arrayofnumbers[9] = 100;
 console.log(arrayofnumbers);
