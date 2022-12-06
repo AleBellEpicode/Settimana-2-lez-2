@@ -53,14 +53,16 @@ if (totalShoppingCart > 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-let sconto = totalShoppingCart * 0.8;
-if (sconto > 50) {
+let sconto = 0.8;
+let BlackFriday = sconto * totalShoppingCart;
+
+if (BlackFriday > 50) {
   console.log(
     "Congratulazioni! La tua spedizione sara gratuita. Importo totale=",
-    sconto
+    BlackFriday
   );
-} else if (sconto < 50) {
-  console.log("totale del tuo cart=", sconto + spedizione);
+} else if (BlackFriday < 50) {
+  console.log("totale del tuo cart=", BlackFriday + spedizione);
 }
 
 /* ESERCIZIO 7
@@ -68,9 +70,9 @@ if (sconto > 50) {
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-const great = 20;
-const greater = 30;
-const enormous = 10;
+const great = 30;
+const greater = 10;
+const enormous = 20;
 
 if (great > greater && greater > enormous) {
   console.log(great, greater, enormous);
@@ -85,6 +87,7 @@ if (great > greater && greater > enormous) {
 } else if (enormous > great && great > greater) {
   console.log(enormous, great, greater);
 }
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
