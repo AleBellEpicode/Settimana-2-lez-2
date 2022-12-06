@@ -68,7 +68,23 @@ if (sconto > 50) {
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
+const great = 20;
+const greater = 30;
+const enormous = 10;
 
+if (great > greater && greater > enormous) {
+  console.log(great, greater, enormous);
+} else if (greater > enormous && enormous > great) {
+  console.log(greater, enormous, great);
+} else if (enormous > greater && greater > great) {
+  console.log(enormous, greater, great);
+} else if (great > enormous && enormous > greater) {
+  console.log(great, enormous, greater);
+} else if (greater > great && great > enormous) {
+  console.log(greater, great, enormous);
+} else if (enormous > great && great > greater) {
+  console.log(enormous, great, greater);
+}
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
@@ -130,21 +146,3 @@ const arrayofnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   */
 arrayofnumbers[9] = 100;
 console.log(arrayofnumbers);
-
-const great = 20;
-const greater = 30;
-const enormous = 10;
-
-if (great > greater && greater > enormous) {
-  console.log(great, greater, enormous);
-} else if (greater > enormous && enormous > great) {
-  console.log(greater, enormous, great);
-} else if (enormous > greater && greater > great) {
-  console.log(enormous, greater, great);
-} else if (great > enormous && enormous > greater) {
-  console.log(great, enormous, greater);
-} else if (greater > great && great > enormous) {
-  console.log(greater, great, enormous);
-} else if (enormous > great && great > greater) {
-  console.log(enormous, great, greater);
-}
