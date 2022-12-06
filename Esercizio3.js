@@ -97,8 +97,11 @@ console.log(typeof numberornotnumber);
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-evennumber = 10 % 2;
-console.log(evennumber);
+evennumber = 10;
+console.log(
+  "se il risultato e 0, il numero di partenza sara pari, se non lo e, sara dispari",
+  evennumber % 2
+);
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.*/
